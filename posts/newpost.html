@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new post</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/navigation.css"/>
+    <link rel="stylesheet" href="../css/contents.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/newpost.css"/>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">
+            <div class="sidebar-brand">
+                Dashboard
+            </div>
+            <div class="sidebar-items">
+                <a href="./posts.html">Posts</a>
+                <a href="../comments/comments.html">Comments</a>
+                <a href="../queries/messages.html">Messages</a>
+                <a href="../subscribers/list.html">Subscribers</a>
+                <a href="../profile/admin.html">Profile</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="top-action">
+                <button id="goto-all">Back to posts</button>
+                <div>
+                    <button style="background-color: rgb(17, 17, 92);">Save as draft</button>
+                    <button>Publish</button>
+                </div>
+            </div>
+            <hr>
+            <div class="new-post">
+                
+                <div>
+                    <label>Post Title</label>
+                    <input type="text" id="title" />
+                </div>
+                <div>
+                    <label>Post content</label>
+                    <textarea id="content" rows="20"></textarea>
+                </div>
+                <div class="additional">
+                    <div>
+                        <label>Author</label>
+                        <select>
+                            <option>Achille</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Category</label>
+                        <select>
+                            <option>Amakuru</option>
+                            <option>Video</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label>Featured Image</label>
+                    <input type="file" id="featuredImage" />
+                </div>
+                
+            </div>
+        </section>
+        <section class="footer">
+            <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
+        </section>
+    </div>
+    <script src="../js/new-post.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/checkLogin.js"></script>
+</body>
+</html>

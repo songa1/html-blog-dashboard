@@ -1,0 +1,30 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding:15px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sidebar-brand {
+    opacity: 0.9;
+    background-color: black;
+    padding: 0.5em;
+}
+
+.sidebar-items {
+    margin-left: auto;
+    color: white;
+}
+
+.sidebar-items a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.sidebar-items a:hover {
+    color: rgb(13, 223, 188);
+}

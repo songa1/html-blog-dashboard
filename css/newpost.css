@@ -1,0 +1,30 @@
+.new-post div {
+    margin: 15px 0;
+}
+
+#title {
+    width: 100%;
+    padding:10px;
+}
+
+#content {
+    width: 100%;
+    padding: 10px;
+}
+
+.additional {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    flex-direction: row;
+}
+
+input {
+    width: 100%;
+    padding:10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+}

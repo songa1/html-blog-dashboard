@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribers</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/navigation.css"/>
+    <link rel="stylesheet" href="../css/contents.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/messages.css"/>
+    <link rel="stylesheet" href="../css/subscribers.css"/>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">
+            <div class="sidebar-brand">
+                Dashboard
+            </div>
+            <div class="sidebar-items">
+                <a href="../posts/posts.html">Posts</a>
+                <a href="../comments/comments.html">Comments</a>
+                <a href="../queries/messages.html">Messages</a>
+                <a href="./list.html">Subscribers</a>
+                <a href="../profile/admin.html">Profile</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="top-action-messages">
+                <div style="color:rgb(16, 78, 68);font-weight: bold;">
+                    A list of all your subscribers
+                </div>
+                <button id="filter" style="margin-left: auto;">Filter</button> 
+            </div>
+            <hr>
+            <div>
+                <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center;font-weight: 900;color:rgb(16, 78, 68);" class="subscriber">
+                    <input type="checkbox">
+                    <p>Email</p>
+                    <p>Date joined</p>
+                    <div>
+                        <p>Actions</p>
+                    </div>
+                </div>
+                <div class="subscribers">
+                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
+                        <input type="checkbox">
+                        <p>example@email.com</p>
+                        <p>12 July 2021</p>
+                        <div>
+                            <button>Send message</button>
+                            <button style="background-color: red;">Delete</button>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
+                        <input type="checkbox">
+                        <p>example@email.com</p>
+                        <p>12 July 2021</p>
+                        <div>
+                            <button>Send message</button>
+                            <button style="background-color: red;">Delete</button>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
+                        <input type="checkbox">
+                        <p>example@email.com</p>
+                        <p>12 July 2021</p>
+                        <div>
+                            <button>Send message</button>
+                            <button style="background-color: red;">Delete</button>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
+                        <input type="checkbox">
+                        <p>example@email.com</p>
+                        <p>12 July 2021</p>
+                        <div>
+                            <button>Send message</button>
+                            <button style="background-color: red;">Delete</button>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
+                        <input type="checkbox">
+                        <p>example@email.com</p>
+                        <p>12 July 2021</p>
+                        <div>
+                            <button>Send message</button>
+                            <button style="background-color: red;">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
+        </section>
+    </div>
+    <script src="../js/posts.js"></script>
+    <script src="../js/new-post.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/checkLogin.js"></script>
+</body>
+</html>

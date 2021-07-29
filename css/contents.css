@@ -1,0 +1,63 @@
+.contents {
+    width: 70%;
+    margin: 0 15%;
+    margin-bottom: 80px;
+}
+
+.top-action {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.top-action div {
+    margin-left: auto;
+}
+
+.top-action div input {
+    padding: 10px;
+    border: 1px solid rgb(5, 14, 12);
+}
+
+button {
+    margin: 0;
+    padding:10px;
+    background-color: rgb(16, 78, 68);
+    color: white;
+    border: 0;
+}
+
+button:active {
+    border: 1px solid rgb(13, 223, 188);
+}
+
+hr {
+    margin: 0;
+}
+
+.posts-published {
+    margin: 15px 0;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(236, 234, 234);
+    padding: 2px;
+    margin: 15px 0;
+}
+
+.post img {
+    margin-left: auto;
+    width: 30%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.actions button {
+    margin: 10px;
+}

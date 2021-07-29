@@ -1,0 +1,10 @@
+.message {
+    margin: 50px;
+    border: 1px solid grey;
+}
+
+.top-action-messages {
+    display: flex;
+    align-items:center;
+    padding: 15px 0;
+}
