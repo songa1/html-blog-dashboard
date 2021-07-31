@@ -51,3 +51,11 @@ button:hover {
 .deleteBtn:hover {
     background-color: rgb(139, 16, 16);
 }
+
+a {
+    color:rgb(16, 78, 68);
+}
+
+hr {
+    width: 100%;
+}
