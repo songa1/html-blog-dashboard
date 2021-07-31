@@ -22,3 +22,33 @@ input[type="email"],input[type="password"]  {
     width: 100%;
     padding: 10px;
 }
+
+@media (max-width: 200px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 70%;
+    }
+}
