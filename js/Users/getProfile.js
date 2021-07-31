@@ -1,7 +1,7 @@
 const profile = {
     id: 1,
     name: "Cishahayo Songa",
-    about: "This is about section ofd this user an d it xonyabohis basic inforamayion, his bacxkgrounf, his hobbiwa and everuthing eelared to it.",
+    about: "This is about section ofd this user an d it xonyabohis basic inforamayion, his bacxkgrounf, his hobbiwa and everuthing eelared to it. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos excepturi fugit numquam architecto magnam sapiente recusandae consequuntur maxime dignissimos.",
     dob: "17 January 2001",
     role: "Author",
     social: {
