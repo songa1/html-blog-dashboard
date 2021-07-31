@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css"/>
     <link rel="stylesheet" href="../css/messages.css"/>
     <link rel="stylesheet" href="../css/profile.css"/>
+    <link rel="stylesheet" href="../css/modal.css"/>
 </head>
 <body>
     <div class="container">
@@ -17,6 +18,8 @@
             <div class="sidebar-brand">
                 Dashboard
             </div>
+            <img src="../assets/icons/menu-4-xxl.png" id="menu-icon">
+            <img src="../assets/icons/document-close-2.png" id="close-icon">
             <div class="sidebar-items">
                 <a href="../posts/posts.html">Posts</a>
                 <a href="../comments/comments.html">Comments</a>
@@ -31,7 +34,7 @@
                 <div style="color:rgb(16, 78, 68);font-weight: bold;">
                     <p id="userName"></p>
                 </div>
-                <button id="filter" style="margin-left: auto;">Edit profile</button> 
+                <button id="editProfile" style="margin-left: auto;">Edit profile</button> 
             </div>
             <hr>
             <div>
@@ -44,7 +47,7 @@
                         <h4><span style="color:rgb(16, 78, 68);">Role: </span> <span id="role"></span></h4>
                         <div style="display: flex;align-items: center;">
                             <button id="viewUserPosts">View posts</button>
-                            <button style="background-color: red;padding: auto 5px;">Delete user</button>
+                            <button class="deleteBtn">Delete user</button>
                             <div style="display: flex;margin-left: auto;">
                                 <a href="#" style="width: 40px;padding: 2px;" id="facebook" target="_blank"><img src="../assets/icons/facebook-4-xxl.png"></a>
                                 <a href="#" style="width: 40px;padding: 2px;" id="instagram" target="_blank"><img src="../assets/icons/instagram-4-xxl.png"></a>
@@ -66,6 +69,8 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
         <section class="footer">
             <p>&copy; Blog Dashboard - Alright reserved - 2021</p>

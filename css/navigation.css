@@ -12,6 +12,7 @@
     opacity: 0.9;
     background-color: black;
     padding: 0.5em;
+    z-index: 8;
 }
 
 .sidebar-items {
@@ -31,4 +32,85 @@
 
 .sidebar-items a:active {
     color: rgb(13, 223, 188);
+}
+
+.menuSmallScreen {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    width: 25%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    top: 0px;
+    padding-top: 90px;
+    z-index: 7;
+}
+.menuSmallScreen a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#menu-icon {
+    display: none;
+    width: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+#close-icon {
+    display: none;
+    width: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+@media (max-width: 200px) {
+    .sidebar-items {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    #close-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .sidebar-items {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    #close-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .sidebar-items {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    #close-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar-items {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    #close-icon {
+        display: block;
+    }
 }

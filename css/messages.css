@@ -13,6 +13,7 @@
 .metadata {
     display: flex;
     align-items: center;
+    color: rgb(16, 78, 68);
 }
 
 .nameEmail {

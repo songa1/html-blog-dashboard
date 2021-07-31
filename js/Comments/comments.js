@@ -2,13 +2,13 @@ const comments = [
     {
         name: "Name",
         email: "email.am@email.com",
-        date: Date.now(),
+        date: "12 July 2021",
         comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment."
     },
     {
         name: "Name",
         email: "email.am@email.com",
-        date: Date.now(),
+        date: "15 July 2021",
         comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment."
     },
 ];

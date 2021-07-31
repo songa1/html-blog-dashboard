@@ -8,12 +8,12 @@ const subscribers = [
         date: "12 July 2021"
     },
 ];
-
+let check;
 const subMapping = (data) => {
     const subMapper = document.querySelector('.subscribers')
     const oneSubscriber = document.createElement('div')
     oneSubscriber.setAttribute('class', 'subscriber')
-    const check = document.createElement('input')
+    check = document.createElement('input')
     check.type = 'checkbox'
     const email = document.createElement('p')
     const date = document.createElement('p')
@@ -22,6 +22,8 @@ const subMapping = (data) => {
     const sendMsg = document.createElement('button')
     const deleteSub  = document.createElement('button')
     deleteSub.style.backgroundColor = 'red'
+
+   
 
     email.textContent = data.email
     date.textContent = data.date
@@ -38,6 +40,7 @@ const subMapping = (data) => {
     oneSubscriber.appendChild(actions)
 
     subMapper.appendChild(oneSubscriber)
+    
 }
 
 subscribers.forEach(subscriber => {
