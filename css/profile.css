@@ -3,9 +3,26 @@
     grid-template-columns: 19% 79%;
     margin: 20px;
     grid-gap: 1%;
+    padding: 20px;
+    box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
 }
 
 .profile-sect-1 img {
     width: 100%;
     border-radius: 50%;
+    
+}
+
+.profile-sect-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+    justify-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-sect-2 div {
+    width: 100%;
+    box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
 }

@@ -1,0 +1,11 @@
+.reply-space {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.reply-space select, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.9s;
+}

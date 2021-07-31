@@ -28,3 +28,7 @@
 .sidebar-items a:hover {
     color: rgb(13, 223, 188);
 }
+
+.sidebar-items a:active {
+    color: rgb(13, 223, 188);
+}

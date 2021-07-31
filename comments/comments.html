@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/contents.css"/>
     <link rel="stylesheet" href="../css/footer.css"/>
     <link rel="stylesheet" href="../css/messages.css"/>
+    <link rel="stylesheet" href="../css/comments.css"/>
 </head>
 <body>
     <div class="container">
@@ -18,11 +19,11 @@
             </div>
             <div class="sidebar-items">
                 <a href="../posts/posts.html">Posts</a>
-                <a href="./comments.html">Comments</a>
+                <a href="./comments.html" style="color: rgb(13, 223, 188);">Comments</a>
                 <a href="../queries/messages.html">Messages</a>
-                <a href="#">Subscribers</a>
-                <a href="#">Profile</a>
-                <a href="#">Logout</a>
+                <a href="../subscribers/list.html">Subscribers</a>
+                <a href="../profile/admin.html">Profile</a>
+                <a href="#" id="logout">Logout</a>
             </div>
         </section>
         <section class="contents">
@@ -34,7 +35,7 @@
             </div>
             <hr>
             <div class="messages">
-                <div class="message">
+                <!-- <div class="message">
                     <div style="display: flex;align-items: center;color: rgb(16, 78, 68);">
                         <p>Admin Example ><span> example@admin.com</exampl></span></p>
                         <p style="margin-left: auto;">12 July 2021</p>
@@ -42,18 +43,32 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus modi qui dolorum praesentium dolor distinctio dignissimos sit animi optio! Ut rerum impedit veritatis laboriosam eligendi commodi accusantium placeat non fuga, vitae harum est aperiam similique expedita. Autem eligendi molestias aliquid?</p>
                     <div style="padding: 10px;">
-                        <button type="button">Reply</button>
+                        <button type="button" class="reply-activate">Reply</button>
                         <button type="button" style="background-color: red;">Delete</button>
                     </div>
-                </div>
+                    <div class="reply-space">
+                        <select>
+                            <option>Admin</option>
+                            <option>Songa</option>
+                        </select>
+                        <textarea rows="4"></textarea>
+                        <div style="margin-left: auto;">
+                            <button style="background-color: red;" id="cancel-reply">Cancel</button>
+                            <button>Reply</button>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </section>
         <section class="footer">
             <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
         </section>
     </div>
-    <script src="../js/posts.js"></script>
-    <script src="../js/new-post.js"></script>
-    <script src="../js/nav.js"></script>
+    <script src="../js/Navigation/nav.js"></script>
+    <script src="../js/Auth/logout.js"></script>
+    <script src="../js/Auth/checkLogin.js"></script>
+    <script src="../js/comments.js"></script>
+    <script src="../js/Comments/comments.js"></script>
+    <script src="../js/Comments/reply.js"></script>
 </body>
 </html>

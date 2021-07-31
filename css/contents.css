@@ -45,6 +45,7 @@ hr {
     background-color: rgb(236, 234, 234);
     padding: 2px;
     margin: 15px 0;
+    box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
 }
 
 .post img {

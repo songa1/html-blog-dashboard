@@ -1,10 +1,25 @@
 .message {
-    margin: 50px;
-    border: 1px solid grey;
+    margin: 20px 50px;
+    padding: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
 }
 
 .top-action-messages {
     display: flex;
     align-items:center;
     padding: 15px 0;
+}
+
+.metadata {
+    display: flex;
+    align-items: center;
+}
+
+.nameEmail {
+    color: rgb(16, 78, 68);
+    font-weight: bolder;
+}
+
+.dateHolder {
+    margin-left: auto;
 }

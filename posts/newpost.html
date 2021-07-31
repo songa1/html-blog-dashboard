@@ -17,7 +17,7 @@
                 Dashboard
             </div>
             <div class="sidebar-items">
-                <a href="./posts.html">Posts</a>
+                <a href="./posts.html" style="color: rgb(13, 223, 188);">Posts</a>
                 <a href="../comments/comments.html">Comments</a>
                 <a href="../queries/messages.html">Messages</a>
                 <a href="../subscribers/list.html">Subscribers</a>
@@ -29,8 +29,8 @@
             <div class="top-action">
                 <button id="goto-all">Back to posts</button>
                 <div>
-                    <button style="background-color: rgb(17, 17, 92);">Save as draft</button>
-                    <button>Publish</button>
+                    <button style="background-color: rgb(28, 28, 184);" id="save">Save as draft</button>
+                    <button id="addPost">Publish</button>
                 </div>
             </div>
             <hr>
@@ -38,7 +38,7 @@
                 
                 <div>
                     <label>Post Title</label>
-                    <input type="text" id="title" />
+                    <input type="text" id="postTitle" />
                 </div>
                 <div>
                     <label>Post content</label>
@@ -47,14 +47,14 @@
                 <div class="additional">
                     <div>
                         <label>Author</label>
-                        <select>
+                        <select id="author">
                             <option>Achille</option>
                             <option>Admin</option>
                         </select>
                     </div>
                     <div>
                         <label>Category</label>
-                        <select>
+                        <select id="category">
                             <option>Amakuru</option>
                             <option>Video</option>
                         </select>
@@ -71,9 +71,9 @@
             <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
         </section>
     </div>
-    <script src="../js/new-post.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../js/logout.js"></script>
-    <script src="../js/checkLogin.js"></script>
+    <script src="../js/Posts/new-post.js"></script>
+    <script src="../js/Navigation/nav.js"></script>
+    <script src="../js/Auth/logout.js"></script>
+    <script src="../js/Auth/checkLogin.js"></script>
 </body>
 </html>

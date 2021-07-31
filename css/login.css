@@ -22,9 +22,3 @@ input[type="email"],input[type="password"]  {
     width: 100%;
     padding: 10px;
 }
-
-button {
-    padding: 10px;
-    background-color: rgb(16, 78, 68);
-    color: white;
-}

@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all 0.5s;
     font-family: 'Gowun Dodum', sans-serif, "Helvetica Neue",Helvetica,Arial;
 }
 
@@ -11,7 +12,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(240, 236, 236);
 }
 
 .container {
@@ -27,4 +28,25 @@ h1 {
 
 p {
     margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(24, 100, 87);
+    color: white;
+}
+
+button:hover {
+    padding: 10px;
+    background-color: rgb(40, 158, 138);
+    color: white;
+}
+
+.deleteBtn {
+    background-color: red;
+    margin: 0px 5px;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(139, 16, 16);
 }

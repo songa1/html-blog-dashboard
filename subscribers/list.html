@@ -21,7 +21,7 @@
                 <a href="../posts/posts.html">Posts</a>
                 <a href="../comments/comments.html">Comments</a>
                 <a href="../queries/messages.html">Messages</a>
-                <a href="./list.html">Subscribers</a>
+                <a href="./list.html" style="color: rgb(13, 223, 188);">Subscribers</a>
                 <a href="../profile/admin.html">Profile</a>
                 <a href="#" id="logout">Logout</a>
             </div>
@@ -35,7 +35,7 @@
             </div>
             <hr>
             <div>
-                <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center;font-weight: 900;color:rgb(16, 78, 68);" class="subscriber">
+                <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center;font-weight: 900;color:rgb(16, 78, 68);border-bottom: 1px solid rgb(16, 78, 68);" class="subscriber">
                     <input type="checkbox">
                     <p>Email</p>
                     <p>Date joined</p>
@@ -44,51 +44,9 @@
                     </div>
                 </div>
                 <div class="subscribers">
-                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
-                        <input type="checkbox">
-                        <p>example@email.com</p>
-                        <p>12 July 2021</p>
-                        <div>
-                            <button>Send message</button>
-                            <button style="background-color: red;">Delete</button>
-                        </div>
-                    </div>
-                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
-                        <input type="checkbox">
-                        <p>example@email.com</p>
-                        <p>12 July 2021</p>
-                        <div>
-                            <button>Send message</button>
-                            <button style="background-color: red;">Delete</button>
-                        </div>
-                    </div>
-                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
-                        <input type="checkbox">
-                        <p>example@email.com</p>
-                        <p>12 July 2021</p>
-                        <div>
-                            <button>Send message</button>
-                            <button style="background-color: red;">Delete</button>
-                        </div>
-                    </div>
-                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
-                        <input type="checkbox">
-                        <p>example@email.com</p>
-                        <p>12 July 2021</p>
-                        <div>
-                            <button>Send message</button>
-                            <button style="background-color: red;">Delete</button>
-                        </div>
-                    </div>
-                    <div style="display:grid;grid-template-columns: 10% 40% 25% 25%;align-items:center;justify-content:center" class="subscriber">
-                        <input type="checkbox">
-                        <p>example@email.com</p>
-                        <p>12 July 2021</p>
-                        <div>
-                            <button>Send message</button>
-                            <button style="background-color: red;">Delete</button>
-                        </div>
-                    </div>
+
+                    <!-- List of subscribers will be here -->
+
                 </div>
             </div>
         </section>
@@ -96,10 +54,9 @@
             <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
         </section>
     </div>
-    <script src="../js/posts.js"></script>
-    <script src="../js/new-post.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../js/logout.js"></script>
-    <script src="../js/checkLogin.js"></script>
+    <script src="../js/Navigation/nav.js"></script>
+    <script src="../js/Auth/logout.js"></script>
+    <script src="../js/Auth/checkLogin.js"></script>
+    <script src="../js/Subscribers/subscribers.js"></script>
 </body>
 </html>

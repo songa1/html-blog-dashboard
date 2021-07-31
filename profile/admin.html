@@ -22,14 +22,14 @@
                 <a href="../comments/comments.html">Comments</a>
                 <a href="../queries/messages.html">Messages</a>
                 <a href="../subscribers/list.html">Subscribers</a>
-                <a href="./admin.html">Profile</a>
+                <a href="./admin.html" style="color: rgb(13, 223, 188);">Profile</a>
                 <a href="#" id="logout">Logout</a>
             </div>
         </section>
         <section class="contents">
             <div class="top-action-messages">
                 <div style="color:rgb(16, 78, 68);font-weight: bold;">
-                    Cishahayo SOnga Achille
+                    <p id="userName"></p>
                 </div>
                 <button id="filter" style="margin-left: auto;">Edit profile</button> 
             </div>
@@ -38,19 +38,31 @@
                 <div class="profile-sect-1">
                     <img src="../assets/images/passport.jpg">
                     <div>
-                        <h4><span style="color:rgb(16, 78, 68);">Name: </span> Cishahayo SOnga Achille</h4>
-                        <h4><span style="color:rgb(16, 78, 68);">About: </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo sunt obcaecati nemo tempora qui rerum? Nesciunt minus modi saepe placeat fugiat in, provident voluptatibus temporibus est deleniti ab animi inventore. Obcaecati eum reiciendis pariatur quidem voluptates, illum, asperiores impedit deleniti, eligendi vitae iusto! Fuga soluta culpa illum tempora sit!</h4>
-                        <h4><span style="color:rgb(16, 78, 68);">Date of birth: </span> 17 January 2022</h4>
-                        <h4><span style="color:rgb(16, 78, 68);">Role: </span> Admin</h4>
+                        <h4><span style="color:rgb(16, 78, 68);">Name: </span><span id="nameOfUser"></span></h4>
+                        <h4><span style="color:rgb(16, 78, 68);">About: </span> <span id="about"></span></h4>
+                        <h4><span style="color:rgb(16, 78, 68);">Date of birth: </span> <span id="dob"></span></h4>
+                        <h4><span style="color:rgb(16, 78, 68);">Role: </span> <span id="role"></span></h4>
                         <div style="display: flex;align-items: center;">
-                            <button>View posts</button>
+                            <button id="viewUserPosts">View posts</button>
                             <button style="background-color: red;padding: auto 5px;">Delete user</button>
                             <div style="display: flex;margin-left: auto;">
-                                <a href="#" style="width: 40px;padding: 2px;"><img src="../assets/icons/facebook-4-xxl.png"></a>
-                                <a href="#" style="width: 40px;padding: 2px;"><img src="../assets/icons/instagram-4-xxl.png"></a>
-                                <a href="#" style="width: 40px;padding: 2px;"><img src="../assets/icons/twitter-4-xxl.png"></a>                            
+                                <a href="#" style="width: 40px;padding: 2px;" id="facebook" target="_blank"><img src="../assets/icons/facebook-4-xxl.png"></a>
+                                <a href="#" style="width: 40px;padding: 2px;" id="instagram" target="_blank"><img src="../assets/icons/instagram-4-xxl.png"></a>
+                                <a href="#" style="width: 40px;padding: 2px;" id="twitter" target="_blank"><img src="../assets/icons/twitter-4-xxl.png"></a>                            
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="profile-sect-2">
+                    <div>
+                        <h4>Post stats</h4>
+                        <p><span style="color:rgb(16, 78, 68);font-weight: bold;">Published: </span> 14 posts</p>
+                        <p><span style="color:rgb(16, 78, 68);font-weight: bold;">Views gained: </span> 140 views</p>
+                    </div>
+                    <div>
+                        <h4>Active stats</h4>
+                        <p><span style="color:rgb(16, 78, 68);font-weight: bold;">Last active: </span> 14 days</p>
+                        <p><span style="color:rgb(16, 78, 68);font-weight: bold;">Average posts/day: </span> 1 post per day</p>
                     </div>
                 </div>
             </div>
@@ -59,10 +71,9 @@
             <p>&copy; Blog Dashboard - Alright reserved - 2021</p>
         </section>
     </div>
-    <script src="../js/posts.js"></script>
-    <script src="../js/new-post.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../js/logout.js"></script>
-    <script src="../js/checkLogin.js"></script>
+    <script src="../js/Navigation/nav.js"></script>
+    <script src="../js/Auth/logout.js"></script>
+    <script src="../js/Auth/checkLogin.js"></script>
+    <script src="../js/Users/getProfile.js"></script>
 </body>
 </html>
