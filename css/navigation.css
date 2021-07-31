@@ -77,6 +77,9 @@
     #close-icon {
         display: block;
     }
+    .menuSmallScreen {
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -89,6 +92,9 @@
     #close-icon {
         display: block;
     }
+    .menuSmallScreen {
+        width: 50%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -100,6 +106,9 @@
     }
     #close-icon {
         display: block;
+    }
+    .menuSmallScreen {
+        width: 30%;
     }
 }
 

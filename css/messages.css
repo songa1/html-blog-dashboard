@@ -24,3 +24,45 @@
 .dateHolder {
     margin-left: auto;
 }
+
+
+@media (max-width: 200px) {
+    .message {
+        margin: 3px 0;
+        word-wrap: break-word;
+        padding: 1px;
+        width: 100%;
+    }
+
+    .metadata {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .message {
+        margin: 3px 0;
+        word-wrap: break-word;
+        padding: 1px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .message {
+        margin: 3px 0;
+        word-wrap: break-word;
+        padding: 1px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .message {
+        margin: 3px 0;
+        word-wrap: break-word;
+        padding: 1px;
+        width: 100%;
+    }
+}

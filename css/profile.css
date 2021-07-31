@@ -26,3 +26,158 @@
     width: 100%;
     box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
 }
+
+.actionSocial {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 200px) {
+    .profile-sect-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        grid-gap: 1%;
+        padding: 20px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+    .actionSocial {
+        flex-direction: column;
+    }
+
+    .profile-sect-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+.social {
+    display: flex;
+    margin-left: auto;
+}
+
+
+@media (max-width: 400px) {
+    .profile-sect-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        grid-gap: 1%;
+        padding: 10px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+    .actionSocial {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 1%;
+    }
+    .social {
+        margin-left: 0;
+        align-items: center;
+        justify-content:center;
+    }
+    .profile-sect-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-sect-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        grid-gap: 1%;
+        padding: 10px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+    .actionSocial {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 1%;
+    }
+    .social {
+        margin-left: 0;
+        align-items: center;
+        justify-content:center;
+    }
+    .profile-sect-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-sect-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        grid-gap: 1%;
+        padding: 10px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+    .actionSocial {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 1%;
+    }
+    .social {
+        margin-left: 0;
+        align-items: center;
+        justify-content:center;
+    }
+    .profile-sect-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile-sect-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        grid-gap: 1%;
+        padding: 10px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+    .profile-sect-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 900px) {
+    .profile-sect-1 {
+        display: grid;
+        grid-template-columns: 30% 69%;
+        margin: 20px;
+        grid-gap: 1%;
+        padding: 20px;
+        box-shadow: 0 2.8px 2.2px rgba(27, 27, 27, 0.034), 0 6.7px 5.3px rgba(110, 110, 110, 0.048), 0 12.5px 10px rgba(117, 116, 116, 0.06);
+    }
+}

@@ -62,3 +62,43 @@ hr {
 .actions button {
     margin: 10px;
 }
+
+@media (max-width: 200px) {
+    .contents {
+        width: 100%;
+        margin: 0 2%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contents {
+        width: 94%;
+        margin: 0 3%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contents {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contents {
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contents {
+        width: 70%;
+        margin: 0 15%;
+        margin-bottom: 40px;
+    }
+}

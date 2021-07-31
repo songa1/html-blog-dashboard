@@ -21,7 +21,7 @@ const subMapping = (data) => {
     actions.setAttribute('class', 'actionsSub')
     const sendMsg = document.createElement('button')
     const deleteSub  = document.createElement('button')
-    deleteSub.style.backgroundColor = 'red'
+    deleteSub.setAttribute('class', 'deleteBtn')
 
    
 
