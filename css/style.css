@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    transition: all 0.5s;
+    transition: all 0.9s;
     font-family: 'Gowun Dodum', sans-serif, "Helvetica Neue",Helvetica,Arial;
 }
 
@@ -58,4 +58,10 @@ a {
 
 hr {
     width: 100%;
+}
+
+.feedback {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(24, 100, 87);
 }

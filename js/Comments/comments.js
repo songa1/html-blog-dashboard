@@ -1,16 +1,26 @@
 const comments = [
-    {
-        name: "Name",
-        email: "email.am@email.com",
-        date: "12 July 2021",
-        comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment."
-    },
-    {
-        name: "Name",
-        email: "email.am@email.com",
-        date: "15 July 2021",
-        comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment."
-    },
+    // {
+    //     name: "Name",
+    //     email: "email.am@email.com",
+    //     date: "12 July 2021",
+    //     comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.",
+    //     post: {
+    //         id: 1,
+    //         link: "https://google.com",
+    //         title: "Google sold Android for 10 millions dollars abd expecting to earn 2 billions from it"
+    //     }
+    // },
+    // {
+    //     name: "Name",
+    //     email: "email.am@email.com",
+    //     date: "15 July 2021",
+    //     comment: "This is a comment. This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.This is a comment.",
+    //     post: {
+    //         id: 2,
+    //         link: "https://google.com",
+    //         title: "Google sold Android for 10 millions dollars abd expecting to earn 2 billions from it"
+    //     }
+    // },
 ];
 
 
@@ -27,11 +37,14 @@ const commentsWrapping = (data)=> {
     dateHolder.setAttribute('class', 'dateHolder')
     const line = document.createElement('hr')
     const message = document.createElement('p')
+    const post = document.createElement('a')
 
     nameEmailHolder.textContent = data.name
     emailOnly.textContent =" > " +data.email
     dateHolder.textContent = data.date
     message.textContent = data.comment
+    post.innerHTML = data.post.title
+    post.href = `../posts/single.html#${data.post.id}`
 
     // Data about only comments
     const actions = document.createElement('div')
@@ -42,6 +55,7 @@ const commentsWrapping = (data)=> {
     deleteBtn.innerHTML = "Delete"
     actions.appendChild(reply)
     actions.appendChild(deleteBtn)
+    actions.appendChild(post)
     actions.style.padding = '10px'
     reply.addEventListener('click',()=>{
         replyForm.style.display = 'flex'
@@ -92,3 +106,16 @@ const commentsWrapping = (data)=> {
 comments.forEach(comment => {
     commentsWrapping(comment)
 })
+
+
+function ifZero(){
+    const messageWrapper = document.querySelector('.messages')
+    const message = document.createElement('p')
+    message.setAttribute('class', 'feedback')
+    message.textContent = `There are no comments yet! Check back later`
+    messageWrapper.appendChild(message)
+}
+
+if(comments.length === 0) {
+    ifZero()
+}

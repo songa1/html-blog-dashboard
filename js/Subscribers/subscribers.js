@@ -1,12 +1,12 @@
 const subscribers = [
-    {
-        email: "example@email.com",
-        date: "10 July 2021"
-    },
-    {
-        email: "example@gmail.com",
-        date: "12 July 2021"
-    },
+    // {
+    //     email: "example@email.com",
+    //     date: "10 July 2021"
+    // },
+    // {
+    //     email: "example@gmail.com",
+    //     date: "12 July 2021"
+    // },
 ];
 let check;
 const subMapping = (data) => {
@@ -46,3 +46,16 @@ const subMapping = (data) => {
 subscribers.forEach(subscriber => {
     subMapping(subscriber)
 })
+
+
+function withZero(){
+    const subMapper = document.querySelector('.subscribers')
+    const message = document.createElement('p')
+    message.setAttribute('class', 'feedback')
+    message.textContent = `There are no subscribers yet! Check back later`
+    subMapper.appendChild(message)
+}
+
+if(subscribers.length === 0) {
+    withZero()
+}

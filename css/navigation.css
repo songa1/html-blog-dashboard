@@ -54,12 +54,18 @@
     color: white;
 }
 
+#logout {
+    background-color: rgb(16, 78, 68);
+    border-radius:3px;
+}
+
 #menu-icon {
     display: none;
     width: 30px;
     margin-left: auto;
     margin-right: 10px;
 }
+
 #close-icon {
     display: none;
     width: 30px;

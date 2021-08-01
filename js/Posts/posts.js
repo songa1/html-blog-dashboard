@@ -4,6 +4,7 @@ document.getElementById('goto-new').addEventListener('click', async ()=> {
 
 const posts = [
     {
+        id: 1,
         title: 'American vow song',
         body: "This is the body of this pot. Help me find out the main content of this post.",
         author: 'John Doe',
@@ -12,6 +13,7 @@ const posts = [
 
     },
     {
+        id: 2,
         title: "Meddy's new song hits 2 millions",
         body: "Meddy's song my vow hits 2 millions views in just 3 days, making the record in Rwanda.",
         author: 'Achille',
@@ -54,10 +56,18 @@ const postRendering = (data) => {
     deleteBtn.textContent = 'Delete'
     deleteBtn.setAttribute('class', 'deleteBtn')
     
-    // authorDate.textContent  = "Posted by " + post.author
+    // actions in action
+    view.addEventListener('click',()=>{
+        window.location.assign(`/posts/single.html#${data.id}`)
+    })
 
-    
-    
+    edit.addEventListener('click',()=>{
+        window.location.assign(`/posts/update.html#${data.id}`)
+    })
+
+    deleteBtn.addEventListener('click',()=>{
+        confirm(`Are you sure you want to delete ${data.title}`)
+    })
 
     //Appending children to parents
     authorDate.appendChild(authorHold)
@@ -84,3 +94,15 @@ const postRendering = (data) => {
 posts.forEach(post => {
     postRendering(post)
 })
+
+function whenZero(){
+    const postsCollection = document.querySelector('.posts-published')
+    const message = document.createElement('p')
+    message.setAttribute('class', 'feedback')
+    message.textContent = `There are no posts! Publish one`
+    postsCollection.appendChild(message)
+}
+
+if(posts.length === 0) {
+    whenZero()
+}
